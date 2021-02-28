@@ -1,0 +1,88 @@
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar img {
+  height:100px;
+  max-width: 150px;
+}
+
+/* Style tab links */
+.tablink {
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 10%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.column-long {
+  width: 65%;
+  float: left;
+}
+
+.column-short {
+  width: 30%;
+  float: right;
+}
+
+.column-short img {
+  max-height: 400px;
+}
+
+
+#Home {color: white;
+       background-image: url(images/bg/MP.jpg);
+       background-size: cover;}
+#RCF {color: white;
+      background-image: url(images/bg/rcf.jpg);
+      background-size: cover;}
+#JTS {color: white;
+      background-image: url(images/bg/Microfoon.jpg);
+      background-size: cover;}
+#LBG {color: white;
+      background-image: url(images/bg/LBG.jpg);
+      background-size: cover;}
+#Opname {color: white;
+         background-image: url(images/bg/UO.jpg);
+         background-size: cover;}
+#Intec {color: white;
+        background-image: url(images/bg/intec.jpg);
+        background-size: cover;}
+#Macpc {color: white;
+        background-image: url(images/bg/macpc.jpg);
+        background-size: cover;}
+#Kerktv {color: white;
+         background-image: url(images/bg/kerktv.jpg);
+         background-size: cover;}
+#Sonos{color: white;
+       background-image: url(images/bg/sonos.jpg);
+       background-size: cover;}
+
