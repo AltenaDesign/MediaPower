@@ -8,48 +8,77 @@
 </head>
 <body>
     <nav class="navbar" id="myNavbar">
-
+<!-- 1.0 | NAVBAR | SOCIAL MEDIA -->
       <div class="dropdown-menu">
-        <img src="images/share.png" class="tablink" onclick="openPage('Home', this, 'white')" style=" float: left;">
+        <img src="images/share.png" class="small pop-up menu-btn" onclick="myFunction()" style=" float: left;">
         <div class="menu-content">
       <a class="links" href="#">LinkdIn</a>
       <a class="links" href="#">E-mail</a>
       <a class="links" href="#">Facebook</a>
       <a class="links" href="#">Google</a>
       <a class="links" href="#">WhatsApp</a>
-
      </div>
   </div>
-
+<!-- 1.2 | NAVBAR | NEWS ITEMS -->
  <div class="dropdown-menu">
-    <img src="images/news.png" class="tablink menu-btn" onclick="myFunction()" style=" float: left;">
+    <img src="images/news.png" class="small pop-up menu-btn" onclick="myFunction()" style=" float: left;">
      <div class="menu-content">
       <div class="links"> 
-        <img src="images/bg/Microfoon2.jpg" class="avatar">
         <a>Nieuwsbericht 1</a>
       </div>
       <div class="links"> 
-        <img src="images/bg/Microfoon2.jpg" class="avatar">
         <a>Nieuwsbericht 2</a>
       </div>
       <div class="links"> 
-        <img src="images/bg/Microfoon2.jpg" class="avatar">
         <a>Nieuwsbericht 3</a>
       </div>
      </div>
   </div>
-
-        <img src="images/logo/mp.jpg" class="tablink active" onclick="openPage('Home', this, 'white')" style="max-width: 25%">
-        <img src="images/logo/rcf.png" class="tablink" onclick="openPage('RCF', this, 'white')">
-        <img src="images/logo/jts.png" class="tablink" onclick="openPage('JTS', this, 'white')">
-        <img src="images/logo/lbg.png" class="tablink" onclick="openPage('LBG', this, 'white')">
-        <img src="images/logo/opname.png" class="tablink" onclick="openPage('Opname', this, 'white')">
-        <img src="images/logo/intec.png" class="tablink" onclick="openPage('Intec', this, 'white')">
-        <img src="images/logo/macpc.png" class="tablink" onclick="openPage('Macpc', this, 'white')">
-        <img src="images/logo/kerktv.png" class="tablink" onclick="openPage('Kerktv', this, 'white')">
-        <img src="images/logo/sonos.png" class="tablink" onclick="openPage('Sonos', this, 'white')">
+<!-- 1.3 | NAVBAR | MOBILE MENU -->
+  <div class="dropdown-menu-mobile">
+    <img src="images/logo/mp.jpg" class="logo pop-up menu-btn" onclick="myFunction()" style=" float: left;">
+     <div class="menu-content">
+      <div class="links"> 
+        <a onclick="openPage('Home', this, )">Home</a>
+      </div>
+      <div class="links"> 
+        <a onclick="openPage('RCF', this, )">RCF Speakers</a>
+      </div>
+      <div class="links"> 
+        <a onclick="openPage('JTS', this, )">JTS-Microfoons</a>
+      </div>
+      <div class="links"> 
+        <a onclick="openPage('LBG', this, )">Licht Beeld Geluid</a>
+      </div>
+      <div class="links"> 
+        <a onclick="openPage('Opname', this, )">Uitvaart Opname</a>
+      </div>
+      <div class="links"> 
+        <a onclick="openPage('Intec', this, )">Intec Printers</a>
+      </div>
+      <div class="links"> 
+        <a onclick="openPage('Macpc', this, )">MacPc</a>
+      </div>
+      <div class="links"> 
+        <a onclick="openPage('Kerktv', this, )">KerkTv</a>
+      </div>
+      <div class="links"> 
+        <a onclick="openPage('Sonos', this, )">Sonos</a>
+      </div>
+     </div>
+  </div>
+<!-- 1.4 | NAVBAR | WIDE MENU -->
+        <img src="images/logo/mp.jpg" class="tablink active logo" onclick="openPage('Home', this,)" style="max-width: 25%">
+        <img src="images/logo/rcf.png" class="tablink logo" onclick="openPage('RCF', this, 'grey')">
+        <img src="images/logo/jts.png" class="tablink logo" onclick="openPage('JTS', this, 'grey')">
+        <img src="images/logo/lbg.png" class="tablink logo" onclick="openPage('LBG', this, 'grey')">
+        <img src="images/logo/opname.png" class="tablink logo" onclick="openPage('Opname', this, 'grey')">
+        <img src="images/logo/intec.png" class="tablink logo" onclick="openPage('Intec', this, 'grey')">
+        <img src="images/logo/macpc.png" class="tablink logo" onclick="openPage('Macpc', this, 'grey')">
+        <img src="images/logo/kerktv.png" class="tablink logo" onclick="openPage('Kerktv', this, 'grey')">
+        <img src="images/logo/sonos.png" class="tablink logo" onclick="openPage('Sonos', this, 'grey')">
     </nav>
-
+<!-- 2.0 | INFO | HOME PAGE -->
     <div id="Home" class="tabcontent" style="display:block">
         <div class="column-long">
           <h1>MediaPower</h1>
@@ -63,10 +92,10 @@
           MediaPower is een geregistreerd handelsmerk.</p>
         </div>
         <div class="column-short">
-            <img src="images/Untitled_Artwork 3.png">
+            <img src="images/Untitled_Artwork 3.png" style="max-height: 200px; padding-left: 20%">
         </div>
     </div>
-
+<!-- 2.1 | INFO | RCF -->
     <div id="RCF" class="tabcontent">
         <div class="column-long" style="">
           <h1>RCF Speakers</h1>
@@ -75,42 +104,39 @@
 
           Op onze webshop vind u alle producten en componenten van RCF</p> 
           <div class="button">
-          <a href="https://rcfspeakers.nl/" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br>
+          <a href="https://rcfspeakers.nl/" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br><br><br>
         </div>
         <div class="column-short">
-            <img src="images/logo/rcf.png">
             <img src="images/Untitled_Artwork 3.png" style="max-height: 200px; padding-left: 20%">
         </div>
     </div>
-
+<!-- 2.3 | INFO | JTS -->
     <div id="JTS" class="tabcontent">
       <div class="column-long">
           <h1>JTS Microfoons</h1>
           <p>Technologie, ontwikkeling en vormgeving zijn noodzakelijke componenten bij het ontwerpen van professionele microfoons. Hier bij JTS zijn deze naadloos geintegreerd. De afgelopen 35 jaar heeft JTS grote hoeveelheden middelen geinvesteerd in onderzoek en ontwikkeling van microfoons. De resultaten tonen de artistieke en wetenschappelijke prestaties van JTS-producte. De inspanning maakt de JTS-microfoon een wonder in termen van betaalbaarheid, prestaties en betrouwbaarheid.<br><br>
           Just True Sound, alleen het beste geluid!</p> 
           <div class="button">
-          <a href="https://jts-microfoons.nl" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br>
+          <a href="https://jts-microfoons.nl" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br><br><br>
         </div>
         <div class="column-short">
-            <img src="images/logo/jts.png">
             <img src="images/Untitled_Artwork 3.png" style="max-height: 200px; padding-left: 20%">
         </div>
     </div>
-
+<!-- 2.4 | INFO | LICHT BEELD GELUID -->
     <div id="LBG" class="tabcontent">
       <div class="column-long">
           <h1>Licht Beeld Geluid</h1>
           <p>Wij bieden professionele totaaloplossingen voor licht, beeld, geluid, video, stroom, podia en rigging.<br><br>
           Een betrouwbare partner in audiovisuele ondersteuning van congressen, presentaties en evenementen, alsmede verkoop, installatie en onderhoud van audiovisuele apparatuur.</p> 
           <div class="button">
-          <a href="https://lichtbeeldgeluid.nl" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br>
+          <a href="https://lichtbeeldgeluid.nl" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br><br><br>
         </div>
         <div class="column-short">
-            <img src="images/logo/lbg.png">
             <img src="images/Untitled_Artwork 3.png" style="max-height: 200px; padding-left: 20%">
         </div>
     </div>
-
+<!-- 2.5 | INFO | UITVAART OPNAME -->
     <div id="Opname" class="tabcontent">
       <div class="column-long">
           <h1>Uitvaart Opname</h1>
@@ -118,27 +144,25 @@
           Het overlijden van een dierbare is een gebeurtenis die onherroepelijk is. Verder moeten leven zonder deze dierbare lijkt een onmogelijke opgave.<br><br>
           Geluid- of beeldopname zijn technieken die tegenwoordig veelvuldig gebruikt worden bij uitvaarten. Vooral voor diegenen die, om welke reden dan ook, niet fysiek aanwezig kunnen zijn bij de uitvaart, is een beeld- of geluidsopname een uitkomst om hen de gelegenheid te krijgen alsnog afscheid te nemen van de overledene.</p> 
           <div class="button">
-          <a href="https://www.uitvaart-opname.nl" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br>
+          <a href="https://www.uitvaart-opname.nl" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br><br><br>
         </div>
         <div class="column-short">
-            <img src="images/logo/opname.png">
             <img src="images/Untitled_Artwork 3.png" style="max-height: 200px; padding-left: 20%">
         </div>
     </div>
-
+<!-- 2.6 | INFO | INTEC PRINTERS -->
     <div id="Intec" class="tabcontent">
       <div class="column-long">
           <h1>Intec Printers</h1>
           <p>Intec Printers bied u hoogwaardige zwaar papier printers tegen een goedkope prijs</p> 
           <div class="button">
-          <a href="https://www.intecprinters.nl" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br>
+          <a href="https://www.intecprinters.nl" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br><br><br>
         </div>
         <div class="column-short">
-            <img src="images/logo/intec.png">
             <img src="images/Untitled_Artwork 3.png" style="max-height: 200px; padding-left: 20%">
         </div>
     </div>
-
+<!-- 2.7 | INFO | MACPC -->
     <div id="Macpc" class="tabcontent">
       <div class="column-long">
           <h1>MacPC</h1>
@@ -149,14 +173,13 @@
           Behalve particuliere klanten hebben we ook veel zakelijke klanten. We zijn het dan ook gewend om installatie- en onderhoudswerkzaamheden binnen de meest uiteenlopende settings te verrichten. <br><br>
           Probleem met je iMac? of iMac te traag? Wij upgraden hem voor je. Is je MacBook defect? Of heeft je MacBook een ander probleem? Wij lossen het voor je op. Zo garanderen wij 100% tevredenheid voor elke reparatie.</p> 
           <div class="button">
-          <a href="https://macpc.nl" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br>
+          <a href="https://macpc.nl" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br><br><br>
         </div>
         <div class="column-short">
-            <img src="images/logo/macpc.png">
             <img src="images/Untitled_Artwork 3.png" style="max-height: 200px; padding-left: 20%">
         </div>
     </div>
-
+<!-- 2.8 | INFO | KERKTV -->
     <div id="Kerktv" class="tabcontent">
       <div class="column-long">
           <h1>Live KerkTv</h1>
@@ -171,14 +194,13 @@
           <li>Gratis app (voor iOS en Android)</li>
           <li>Via Chromecast op je eigen tv</li><br>
           <div class="button">
-          <a href="https://www.livekerktv.nl" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br>
+          <a href="https://www.livekerktv.nl" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br><br><br>
         </div>
         <div class="column-short">
-            <img src="images/logo/kerktv.png">
             <img src="images/Untitled_Artwork 3.png" style="max-height: 200px; padding-left: 20%">
         </div>
     </div>
-
+<!-- 2.9 | INFO | SONOS -->
     <div id="Sonos" class="tabcontent">
       <div class="column-long">
           <h1>Sonos</h1>
@@ -191,13 +213,14 @@
           <li>De Sonos-app</li><br>
           <p>We verwachten dat onze apparaten en muziekservices als magie samenwerken.<br>Kies daarom voor de vakkennis en deskundigheid van MediaPower.</p> 
           <div class="button">
-          <a href="https://www.sonos.com/nl-nl/home" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br>
+          <a href="https://www.sonos.com/nl-nl/home" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">GA NAAR DE WEBSITE</a></div><br><br><br><br>
       </div>
         <div class="column-short">
-            <img src="images/logo/sonos.png">
             <img src="images/Untitled_Artwork 3.png" style="max-height: 200px; padding-left: 20%">
         </div>
     </div>
+
+ <!-- EINDE -->   
 </body>
     <script type="text/javascript" src="style.js"></script>
 

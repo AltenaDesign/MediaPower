@@ -12,21 +12,10 @@ h1 {
   font-size: 60px;
 }
 
-/*h1 span { 
-    background-color: #30498d; 
-    padding: 10px;
-}*/
-
 p {
   color: #fff;
   font-size: 21px;
 }
-
-/*p span { 
-    background-color: #30498d; 
-    padding-left: : 10px;
-    padding-right: 10px;
-}*/
 
 li {
   color: #fff;
@@ -34,15 +23,27 @@ li {
   padding-left: 10px;
 }
 
-/*li span { 
-    background-color: #30498d; 
-    padding-left: : 10px;
-    padding-right: 10px;
-}*/
+@media only screen and (max-width: 600) {
+  h1 {
+  color: #fff;
+  font-size: 30px;
+}
+
+p {
+  color: #fff;
+  font-size: 12px;
+}
+
+li {
+  color: #fff;
+  font-size: 12px;
+  padding-left: 10px;
+}
+}
 
 /* ---- NAVBAR ---- */
 .navbar {
-  background-color: #30498d;  
+  background-color: #ffffff;  
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -75,6 +76,18 @@ li {
     text-align: left;
   }
 
+  .navbar img {
+    width: 100%;
+    max-width: 100px;
+    max-height:110px;
+  }
+
+    .dropdown-menu img {
+    width: 100%;
+    max-width: 60px;
+    max-height: 70px;
+  }
+
 }
 
 /* ---- NAVBAR TAB-LINKS ---- */
@@ -84,6 +97,13 @@ li {
 
 /* Style tab links */
 .tablink {
+  color: white;
+  float: right;
+  cursor: pointer;
+  padding: 14px 16px;
+}
+
+.pop-up {
   color: white;
   float: right;
   cursor: pointer;
@@ -124,23 +144,45 @@ li {
   .column-long, .column-short {
   	width: 100%;
   }
-  
-  .navbar img {
-  height: 75px;
-  max-width: 150px;
+
+  .tabcontent {
+  color: white;
+  display: none;
+  padding: 50px 20px 70px;
+  height: 150%;
 }
 }
 
-/* ---- PAGES ---- */
+@media screen and (max-width: 600px) {
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 50px 20px 70px;
+    height: 200%;
+  } 
+
+  .tabcontent h1, p, li, img {
+    max-width: 80%;
+  } 
+   .tablink {
+   display: none;
+  }
+ } 
+
+ 
+/* ---- PAGES BACKGROUND ---- */
 #Home {color: black;
        background-image: url(images/bg/MP.jpg);
-       background-size: cover;}
+       background-size: cover;
+       background-repeat: repeat-y;}
 #RCF {color: black;
       background-image: url(images/bg/rcf2.jpg);
-      background-size: cover;}
+      background-size: cover;
+      background-repeat: repeat-y;}
 #JTS {color: black;
       background-image: url(images/bg/Microfoon2.jpg);
-      background-size: cover;}
+      background-size: cover;
+      background-repeat: repeat-y;}
 #LBG {color: white;
       background-image: url(images/bg/LBG2.jpg);
       background-size: cover;}
@@ -191,11 +233,44 @@ display: block;
 background-color: #777;
 }
 
+.dropdown-menu-mobile:hover .menu-content {
+display: block;
+}
+.dropdown-menu-mobile:hover .menu-btn {
+background-color: #777;
+}
+
+@media only screen and (min-width: 992px) {
+  .dropdown-menu-mobile {
+    display: none;
+  }
+}
 /* ---- NEWS-IMAGES ---- */
 .avatar {
   vertical-align: left;
   max-width: 50px;
   max-height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .avatar {
+    vertical-align: left;
+    max-width: 10px;
+    max-height: 10px;
+  }
+
+  .links {
+    font-size: 12px;
+  }
+
+  .menu-content {
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    background-color: #30498d;
+    min-width: 300px;
+    z-index: 1;
+  }
 }
 
 /* ---- BUTTONS ---- */
